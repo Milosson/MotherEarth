@@ -32,6 +32,9 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0px 2px 1px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 header a {
     text-decoration: none;
@@ -55,14 +58,38 @@ h1 {
 #menu > li {
     margin-bottom: 1em;
 }
-.class {
+.active {
     border-bottom: 1px solid #3a3a3a;
+}
+
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0px 2px 1px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+#nav-toggle {
+    display: none;   
+}
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /* MAIN CONTENT */
 main {
     /* MAIN ELEMENT TAKE SURPLUS SPACE TO PUSH FOOTER */
     flex: 1 0 auto;
+    margin-top: 60px;
 }
 
 /* FOOTER */
