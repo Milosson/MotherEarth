@@ -120,5 +120,13 @@ nav {
     .nav-toggle-label {
         display: none;
     }
-
+    #logo {
+        font-size: 200%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+/* MAIN CONTENT */
+main {
+    margin-top: 79px;
+}
 }
