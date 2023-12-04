@@ -1,21 +1,31 @@
-/** Asterisk wildcard selector to override default styles added by browser **/
+/* Asterisk wildcard selector to override default styles added by browser */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* GENERAL STYLES */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 
-
+    /* GENERAL PROJECT STYLES */
+    background-color: #e1c3af;
+    /* color-scheme for site
+    : #7cb6e5 #e1c3af(MAIN) #3b443f #382f24 #b4b4d4 */
+}
+/* HEADER */
 header {
     background-color: #3b443f;
 }
-
-body {
-    background-color: #e1c3af;
-    /** color-scheme for site
-    : #7cb6e5 #e1c3af(MAIN) #3b443f #382f24 #b4b4d4 **/
+/* MAIN CONTENT */
+main {
+    /* MAIN ELEMENT TAKE SURPLUS SPACE TO PUSH FOOTER */
+        flex: 1 0 auto;
 }
-
+/* FOOTER */
 footer {
     background-color: #7cb6e5;
+    
 }
