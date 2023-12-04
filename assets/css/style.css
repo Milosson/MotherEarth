@@ -26,6 +26,9 @@ body {
 header {
     background-color: #3b443f;
 }
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
 
 /* MAIN CONTENT */
 main {
