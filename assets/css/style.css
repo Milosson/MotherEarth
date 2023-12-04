@@ -1,9 +1,14 @@
+/* GOOGLE FONTS IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&family=Roboto+Slab:wght@300&display=swap');
+
+
 /* Asterisk wildcard selector to override default styles added by browser */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* GENERAL STYLES */
 body {
     display: flex;
@@ -14,18 +19,22 @@ body {
     background-color: #e1c3af;
     /* color-scheme for site
     : #7cb6e5 #e1c3af(MAIN) #3b443f #382f24 #b4b4d4 */
+    font-family: 'Roboto Slab', sans-serif; 
 }
+
 /* HEADER */
 header {
     background-color: #3b443f;
 }
+
 /* MAIN CONTENT */
 main {
     /* MAIN ELEMENT TAKE SURPLUS SPACE TO PUSH FOOTER */
-        flex: 1 0 auto;
+    flex: 1 0 auto;
 }
+
 /* FOOTER */
 footer {
     background-color: #7cb6e5;
-    
+
 }
