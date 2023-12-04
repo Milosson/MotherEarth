@@ -44,6 +44,20 @@ h1 {
     letter-spacing: 2px;
     color: #003b1b;
 }
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+    list-style-image: url("/assets/favicon1/favicon-16x16.png");
+    list-style-position:inside;
+    padding-top: 10px;
+}
+#menu > li {
+    margin-bottom: 1em;
+}
+.class {
+    border-bottom: 1px solid #3a3a3a;
+}
 
 /* MAIN CONTENT */
 main {
