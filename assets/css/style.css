@@ -127,6 +127,13 @@ nav {
     }
 /* MAIN CONTENT */
 main {
-    margin-top: 79px;
+    margin-top: 57px;
+}
+
+/* MEDIA QUERY: laptops and larger (992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover{
+        border-bottom: 1px solid #3a3a3a;
+    }    
 }
 }
