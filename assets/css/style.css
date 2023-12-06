@@ -54,6 +54,7 @@ h1 {
     list-style-image: url("/assets/favicon1/favicon-16x16.png");
     list-style-position: inside;
     padding-top: 10px;
+     
 }
 
 #menu>li {
@@ -94,7 +95,7 @@ main {
     background-color: #e1c3af;
     /* MAIN ELEMENT TAKE SURPLUS SPACE TO PUSH FOOTER */
     flex: 1 0 auto;
-    margin-top: 47px;
+    margin-top: 45px;
 }
 
 /* FOOTER */
@@ -150,7 +151,7 @@ main {
 
     /* MAIN CONTENT */
     main {
-        margin-top: 79px;
+        margin-top: 77px;
     }
 
     /* MEDIA QUERY: small laptops and larger (992px and up) */
