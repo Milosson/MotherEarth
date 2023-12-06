@@ -1,7 +1,6 @@
 /* GOOGLE FONTS IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Slab:wght@300&display=swap');
 
-
 /* Asterisk wildcard selector to override default styles added by browser */
 * {
     margin: 0;
@@ -17,11 +16,10 @@ body {
 
     /* GENERAL PROJECT STYLES */
     color: #3a3a3a;
-    background-color: #e1c3af;
     /* color-scheme for site
     : #7cb6e5 #e1c3af(MAIN) #3b443f #382f24 #b4b4d4 */
     font-family: 'Roboto Slab', sans-serif;
-    
+
 }
 
 /* HEADER */
@@ -36,6 +34,7 @@ header {
     justify-content: space-between;
     align-items: baseline;
 }
+
 header a {
     text-decoration: none;
     color: inherit;
@@ -47,17 +46,20 @@ h1 {
     letter-spacing: 2px;
     color: #003b1b;
 }
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
     list-style-image: url("/assets/favicon1/favicon-16x16.png");
-    list-style-position:inside;
+    list-style-position: inside;
     padding-top: 10px;
 }
-#menu > li {
+
+#menu>li {
     margin-bottom: 1em;
 }
+
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
@@ -78,62 +80,84 @@ nav {
 #nav-toggle:checked~nav {
     display: block;
 }
+
 #nav-toggle {
-    display: none;   
+    display: none;
 }
+
 .nav-toggle-label {
     font-size: 2rem;
 }
 
 /* MAIN CONTENT */
 main {
+    background-color: #e1c3af;
     /* MAIN ELEMENT TAKE SURPLUS SPACE TO PUSH FOOTER */
     flex: 1 0 auto;
-    margin-top: 60px;
+    margin-top: 47px;
 }
 
 /* FOOTER */
-footer {
-    background-color: #7cb6e5;
+
+#social-links {
+    display: flex;
+    padding: 5px;
+    justify-content: space-evenly;
+    letter-spacing: 5px;
+    list-style-type: none;
+    text-align: center;
 
 }
+
+#social-links i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
 
 /* MEDIA QUERY: tablets and larger (768px and up) */
 
 @media screen and (min-width: 768px) {
 
-/* HEADER */
+    /* HEADER */
 
-nav {
-    display: block;
-    position: relative;
-    box-shadow: none;
-    width: fit-content;
-    padding-right: 1rem;
-}
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
     #menu {
         display: flex;
     }
-    #menu > li {
+
+    #menu>li {
         padding-left: 1rem;
     }
+
     .nav-toggle-label {
         display: none;
     }
+
     #logo {
-        font-size: 200%;
+        font-size: 280%;
         line-height: 75px;
         margin: 0 0.5rem;
     }
-/* MAIN CONTENT */
-main {
-    margin-top: 57px;
-}
 
-/* MEDIA QUERY: laptops and larger (992px and up) */
-@media screen and (min-width: 992px) {
-    #menu a:hover{
-        border-bottom: 1px solid #3a3a3a;
-    }    
-}
+    /* MAIN CONTENT */
+    main {
+        margin-top: 79px;
+    }
+
+    /* MEDIA QUERY: small laptops and larger (992px and up) */
+    @media screen and (min-width: 992px) {
+        #menu a:hover {
+            border-bottom: 1px solid #3a3a3a;
+        }
+    }
+
 }
