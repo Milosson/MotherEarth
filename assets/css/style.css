@@ -50,11 +50,11 @@ h1 {
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
-    list-style-type: none;
+    list-style-type: disclosure-closed;
     list-style-image: url("/assets/favicon1/favicon-16x16.png");
     list-style-position: inside;
     padding-top: 10px;
-     
+
 }
 
 #menu>li {
@@ -91,11 +91,32 @@ nav {
 }
 
 /* MAIN CONTENT */
-main {
-    background-color: #e1c3af;
+main {  
+   /* background-color: #e1c3af; */
     /* MAIN ELEMENT TAKE SURPLUS SPACE TO PUSH FOOTER */
     flex: 1 0 auto;
     margin-top: 45px;
+}
+
+#hero {
+height: 500px;
+width: 100%; 
+background: url("../images/photo-1534294228306-bd54eb9a7ba8\ \(1\).avif") no-repeat center center/cover;
+transition: transform 15s, filter 10s ease-in-out;
+animation-duration: 15s;
+animation-name: hero-zoom;
+background-size: cover;
+}
+@keyframes hero-zoom {
+    0% {
+        transform: scale(1);
+            }
+    50%     {
+        transform: scale(1.1);
+    }           
+    100%    {
+        transform: scale(1.2);
+    }
 }
 
 /* FOOTER */
