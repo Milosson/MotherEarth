@@ -22,6 +22,15 @@ body {
 
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #003b1b;
+}
+
 /* HEADER */
 header {
     background-color: #ffffff;
@@ -29,7 +38,7 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0px 2px 1px #3a3a3a;
+    box-shadow: 20px 0px 15px rgba(0, 0, 0, 1);
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -40,12 +49,6 @@ header a {
     color: inherit;
 }
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #003b1b;
-}
 
 #menu {
     font-size: 110%;
@@ -72,7 +75,7 @@ nav {
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    box-shadow: 0px 2px 1px #3a3a3a;
+    box-shadow: 20px 0px 15px rgba(0, 0, 0, 1);
     display: none;
     top: 100%;
 }
@@ -91,33 +94,66 @@ nav {
 }
 
 /* MAIN CONTENT */
-main {  
-   /* background-color: #e1c3af; */
+main {
+    /* background-color: #e1c3af; */
     /* MAIN ELEMENT TAKE SURPLUS SPACE TO PUSH FOOTER */
     flex: 1 0 auto;
     margin-top: 45px;
+
 }
 
 #hero {
-height: 500px;
-width: 100%; 
-background: url("../images/photo-1534294228306-bd54eb9a7ba8\ \(1\).avif") no-repeat center center/cover;
-transition: transform 15s, filter 10s ease-in-out;
-animation-duration: 15s;
-animation-name: hero-zoom;
-background-size: cover;
+    height: 600px;
+    width: 100%;
+    background: url("../images/photo-1534294228306-bd54eb9a7ba8\ \(1\).avif") no-repeat center center/cover;
+    transition: transform 10s ease-in-out, width 3s ease-in-out, height 3s ease-in-out;
+    animation-duration: 10s;
+    animation-name: hero-zoom;
+    position: relative;
 }
+
 @keyframes hero-zoom {
     0% {
         transform: scale(1);
-            }
-    50%     {
-        transform: scale(1.1);
-    }           
-    100%    {
+    }
+
+    50% {
         transform: scale(1.2);
     }
+
+    100% {
+        transform: scale(1);
+    }
 }
+
+.hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 20px 0px 15px rgba(0, 0, 0, 1);
+
+    /* TEST */
+    position: relative;
+
+}
+
+#cover-text {
+
+    background-color: rgba(255, 255, 255, .6);
+    font-size: 130%;
+    position: absolute;
+
+    width: 200px;
+    min-height: 200px;
+    right: 40px;
+    padding-left: 10px;
+    padding-top: 20px;
+    top: 280px;
+
+    box-shadow: 1px 5px 5px rgba(92, 156, 230, 1);
+
+}
+
 
 /* FOOTER */
 
@@ -128,6 +164,7 @@ background-size: cover;
     letter-spacing: 5px;
     list-style-type: none;
     text-align: center;
+
 
 }
 
@@ -165,7 +202,7 @@ background-size: cover;
     }
 
     #logo {
-        font-size: 280%;
+        font-size: 240%;
         line-height: 75px;
         margin: 0 0.5rem;
     }
