@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 /* GENERAL STYLES */
@@ -15,6 +16,7 @@ body {
     flex-direction: column;
 
     /* GENERAL PROJECT STYLES */
+    background-color: #FCFCF5;
     color: #3a3a3a;
     /* color-scheme for site
     : #7cb6e5 #e1c3af(MAIN) #3b443f #382f24 #b4b4d4 */
@@ -38,7 +40,7 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 20px 0px 15px rgba(0, 0, 0, 1);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -99,6 +101,7 @@ main {
     /* MAIN ELEMENT TAKE SURPLUS SPACE TO PUSH FOOTER */
     flex: 1 0 auto;
     margin-top: 45px;
+    background-color: #FCFCF5;
 
 }
 
@@ -132,7 +135,7 @@ main {
     overflow: hidden;
     box-shadow: 20px 0px 15px rgba(0, 0, 0, 1);
 
-    /* TEST */
+
     position: relative;
 
 }
@@ -151,9 +154,92 @@ main {
     top: 280px;
 
     box-shadow: 1px 5px 5px rgba(92, 156, 230, 1);
+}
+
+/* DID YOU KNOW Section */
+
+#didyouknow {
+
+    height: 600px;
+
+    /* TEST */
+    position: relative;
+   overflow:hidden;
+    width: 100%;
+    
 
 }
 
+#dyk-heading {
+    text-align: center;
+    margin: 25px;
+    font-size: 250%;
+    padding-bottom: 25px;
+    
+}
+
+#left-txt-dyk {
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+
+}
+
+#right-txt-dyk {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+
+}
+
+
+#mid-img-dyk {
+  
+    width: 33%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+    max-width: 520px;
+    max-height: 420px;
+
+
+    border-radius: 5%;
+}
+
+
+.left-dyk-heading {
+    width: 60%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-dyk-heading h2 {
+    text-align: right;
+}
+
+.right-dyk-heading {
+    width: 60%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-dyk-heading p {
+    text-align: right;
+
+}
+
+#didyouknow hr {
+    border-top: 1px dashed #3a3a3a;
+    margin: 5px 0;
+}
 
 /* FOOTER */
 
@@ -210,7 +296,13 @@ main {
     /* MAIN CONTENT */
     main {
         margin-top: 77px;
+        flex: 1 0 auto;
     }
+
+   
+
+    }
+
 
     /* MEDIA QUERY: small laptops and larger (992px and up) */
     @media screen and (min-width: 992px) {
@@ -218,5 +310,43 @@ main {
             border-bottom: 1px solid #3a3a3a;
         }
     }
+      
 
-}
+   /* For larger to medium screens size from 1200px wide and down */
+   @media screen and (max-width: 1200px) {
+
+       #didyouknow {
+           width: -webkit-fill-available;
+           height: 1200px;
+           margin: 0 auto;
+
+       }
+
+       #dyk-heading {
+           padding: 30px 0;
+           margin: 0;
+       }
+
+       #left-txt-dyk,
+       #right-txt-dyk {
+
+           width: fit-content;
+           float: none;
+           padding: 0;
+       }
+
+       #mid-img-dyk {
+
+           clear: both;
+           width: fit-content;
+           float: center;
+           padding: 0;
+           margin: 0 auto;
+       }
+
+       #hero-outer {
+        width: -webkit-fill-available;
+        height: fit-content;
+       }
+
+   }
