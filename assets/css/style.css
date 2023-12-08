@@ -203,8 +203,8 @@ main {
 
     position: relative;
     overflow: hidden;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 400px;
+    max-height: 400px;
 
 
     border-radius: 5%;
@@ -239,6 +239,21 @@ main {
 #didyouknow hr {
     border-top: 1px dashed #3a3a3a;
     margin: 5px 0;
+}
+
+/* THUMB NAIL EARTH EVENT SECTION */
+
+#thumb-bg {
+    background: url(/assets/images/earthgif_dab061f0-d2bd-487e-8fcb-e55d07564515_480x480.gif) no-repeat center/cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+#event div {
+    
+    text-align: center;
+    color: black;
+    padding: 15px;
+
 }
 
 /* FOOTER */
@@ -343,15 +358,17 @@ main {
 
     #right-txt-dyk {
         text-align: end;
-        align-self: flex-end; /* CHECK IF WORKS -E display: block*/
+        align-self: flex-end;
+        /* CHECK IF WORKS -E display: block*/
         margin-left: 10vw;
         padding-left: 10vw;
     }
 
     #left-txt-dyk {
         text-align: start;
-        align-self: flex-start; /* CHECK IF WORKS -E display:block*/ 
-        padding-left: 10vw; 
+        align-self: flex-start;
+        /* CHECK IF WORKS -E display:block*/
+        padding-left: 10vw;
         margin-left: 10vw;
     }
 
