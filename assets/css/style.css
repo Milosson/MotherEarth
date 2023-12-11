@@ -244,7 +244,7 @@ main {
 /* THUMB NAIL EARTH EVENT SECTION */
 
 #event {
-    background: url("/assets/images/earththumb.jpg") no-repeat center/cover;
+    background: url("../images/earththumb.jpg") no-repeat center/cover;
     display: flex;
     flex-wrap: wrap;
 }
@@ -311,13 +311,18 @@ main {
 
 /* Explore Gallery Page Styles */
 
+
+
 #explore-photos img {
-    width: 100%;     
+    width: 100%;
     line-height: 1em;
-    
+
+
 }
+
 #explore-photos {
     line-height: 0;
+
 
 }
 
@@ -341,6 +346,15 @@ main {
     color: #3a3a3a;
 }
 
+/* MEDIA QUERY: tablets and larger (>576px and up) */
+@media screen and (max-width: 576px) {
+
+    #explore-photos {
+        column-count: 2;
+
+    }
+
+}
 
 /* MEDIA QUERY: tablets and larger (768px and up) */
 
@@ -380,8 +394,37 @@ main {
         flex: 1 0 auto;
     }
 
+    #explore-photos>img:hover {
+        border: 5px solid #fff;
+        -webkit-transofmr: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-filter: none;
+        filter: none;
 
+    }
 
+    #explore-photos img {
+        /* width: 100%;     
+    line-height: 1em; */
+        width: 450px;
+        height: 300px;
+        margin: 10px;
+        border: 10px solid #fefae0;
+        -webkit-filter: sepia(100%);
+        filter: sepia(100%);
+        transition-duration: 1s;
+
+    }
+
+    #explore-photos {
+        /* line-height: 0; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
 }
 
 
@@ -450,6 +493,20 @@ main {
     #hero-outer {
         width: -webkit-fill-available;
         height: -webkit-fill-available;
+    }
+
+
+}
+
+/* For xlarge screens size from 1200px wide and up*/
+            width: 60rem;
+            height: 60rem;
+            
+         @media screen and (min-width:1200px) {
+    #explore-photos {
+        column-count: 3;
+        column-gap: 10px;
+
     }
 
 }
