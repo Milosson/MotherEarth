@@ -142,7 +142,7 @@ main {
 
 #cover-text {
 
-    background-color: rgba(255, 255, 255, .6);
+    background-color: rgba(141, 205, 170, .6);
     font-size: 130%;
     position: absolute;
 
@@ -153,7 +153,7 @@ main {
     padding-top: 20px;
     top: 280px;
 
-    box-shadow: 1px 5px 5px rgba(92, 156, 230, 1);
+    box-shadow: 1px 5px 5px rgba(92, 156, 230, 0.445);
 }
 
 /* DID YOU KNOW Section */
@@ -244,7 +244,7 @@ main {
 /* THUMB NAIL EARTH EVENT SECTION */
 
 #event {
-    background: url(/assets/images/photo-1534294228306-bd54eb9a7ba8\ \(1\).avif) no-repeat center/cover;
+    background: url("/assets/images/nasa-vhSz50AaFAs-unsplash.jpg") center center/cover;
     display: flex;
     flex-wrap: wrap;
 }
@@ -274,7 +274,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(14, 73, 7, 0.226);
     left: 25vw;
     margin-top: 5px;
 }
@@ -294,17 +293,17 @@ main {
 
     0%,
     100% {
-        color: #00c2ba;
+        color: #ffffff;
         filter: blur(1px);
-        text-shadow: 0 0 10px #00c2ba, 0 0 20px #00c2ba, 0 0 30px #00c2ba,
-            0 0 40px #00c2ba, 0 0 60px #00c2ba, 0 0 80px #00c2ba, 0 0 100px #00c2ba,
-            0 0 120px #00c2ba;
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff 0 30px #ffffff,
+            0 0 40px #ffffff 0 60px #ffffff, 0 0 80px #ffffff 0 100px #ffffff,
+            0 0 120px #ffffff;
     }
 
     5%,
     95% {
         filter: blur(0);
-        color: #fff;
+       color: rgb(89, 134, 98); 
         text-shadow: none;
     }
 }
