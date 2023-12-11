@@ -244,7 +244,7 @@ main {
 /* THUMB NAIL EARTH EVENT SECTION */
 
 #event {
-    background: url("/assets/images/photo-1534294228306-bd54eb9a7ba8 (1).avif") no-repeat center/cover;
+    background: url("/assets/images/earththumb.jpg") no-repeat center/cover;
     display: flex;
     flex-wrap: wrap;
 }
@@ -253,17 +253,18 @@ main {
 
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
 
     border: 2px solid white;
 
     flex-basis: 200px;
     flex-grow: 1;
     overflow: hidden;
-   
+
 }
+
 #event h3 {
-    color: white;
+    color: #62c197;
 }
 
 
@@ -286,7 +287,7 @@ main {
     color: #fff;
     animation: zoomup 2s linear infinite;
     animation-delay: calc(200ms * var(--i));
-    
+
 }
 
 @keyframes zoomup {
@@ -303,12 +304,22 @@ main {
     5%,
     95% {
         filter: blur(0);
-       color: rgb(89, 134, 98); 
+        color: rgb(89, 134, 98);
         text-shadow: none;
     }
 }
 
+/* Explore Gallery Page Styles */
 
+#explore-photos img {
+    width: 100%;     
+    line-height: 1em;
+    
+}
+#explore-photos {
+    line-height: 0;
+
+}
 
 /* FOOTER */
 
@@ -320,9 +331,8 @@ main {
     list-style-type: none;
     text-align: center;
 
-    box-shadow:inset 2px 3px 15px rgba(0, 0, 0, 1);
+    box-shadow: inset 2px 3px 15px rgba(0, 0, 0, 1);
     margin: 5px;
-
 }
 
 #social-links i {
