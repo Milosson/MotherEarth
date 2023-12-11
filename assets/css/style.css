@@ -243,18 +243,73 @@ main {
 
 /* THUMB NAIL EARTH EVENT SECTION */
 
-#thumb-bg {
-    background: url(/assets/images/earthgif_dab061f0-d2bd-487e-8fcb-e55d07564515_480x480.gif) no-repeat center/cover;
+#event {
+    background: url(/assets/images/photo-1534294228306-bd54eb9a7ba8\ \(1\).avif) no-repeat center/cover;
     display: flex;
     flex-wrap: wrap;
 }
-#event div {
-    
-    text-align: center;
-    color: black;
-    padding: 15px;
 
+#event div {
+
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    border: 2px solid white;
+
+    flex-basis: 200px;
+    flex-grow: 1;
+    overflow: hidden;
+   
 }
+#event h3 {
+    color: white;
+}
+
+
+.container-glow {
+    width: 50%;
+    min-height: 10vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(14, 73, 7, 0.226);
+    left: 25vw;
+    margin-top: 5px;
+}
+
+.text-glow span {
+    font-family: Neon;
+    font-size: 120%;
+    padding: 0 10px;
+    text-transform: uppercase;
+    color: #fff;
+    animation: zoomup 2s linear infinite;
+    animation-delay: calc(200ms * var(--i));
+    
+}
+
+@keyframes zoomup {
+
+    0%,
+    100% {
+        color: #00c2ba;
+        filter: blur(1px);
+        text-shadow: 0 0 10px #00c2ba, 0 0 20px #00c2ba, 0 0 30px #00c2ba,
+            0 0 40px #00c2ba, 0 0 60px #00c2ba, 0 0 80px #00c2ba, 0 0 100px #00c2ba,
+            0 0 120px #00c2ba;
+    }
+
+    5%,
+    95% {
+        filter: blur(0);
+        color: #fff;
+        text-shadow: none;
+    }
+}
+
+
 
 /* FOOTER */
 
@@ -266,6 +321,8 @@ main {
     list-style-type: none;
     text-align: center;
 
+    box-shadow:inset 2px 3px 15px rgba(0, 0, 0, 1);
+    margin: 5px;
 
 }
 
