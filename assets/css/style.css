@@ -106,7 +106,7 @@ main {
 }
 
 #hero {
-    height: 50vh;
+    height: 100%;
     width: 100%;
     background: url("../images/photo-1534294228306-bd54eb9a7ba8\ \(1\).avif") no-repeat center center/cover;
     transition: transform 10s ease-in-out, width 3s ease-in-out, height 3s ease-in-out;
@@ -130,7 +130,7 @@ main {
 }
 
 .hero-outer {
-    height: 600px;
+    height: 64.446vh;
     width: 100%;
     overflow: hidden;
     box-shadow: 20px 0px 15px rgba(0, 0, 0, 1);
@@ -160,14 +160,14 @@ main {
 
 #didyouknow {
 
-    height: 50vh;
+    height: 100%;
+    width: 100%;
 
 
     position: relative;
     overflow: hidden;
-    width: 100%;
+    
 
-    margin-bottom: -10vh;
 
 
 }
@@ -206,8 +206,8 @@ main {
 
     position: relative;
     overflow: hidden;
-    max-width: 50vw;
-    max-height: 40vh;
+    max-width: 480px;
+    max-height: 380px;
 
 
     border-radius: 5%;
@@ -338,7 +338,6 @@ main {
     list-style-type: none;
     text-align: center;
 
-    box-shadow: inset 2px 3px 15px rgba(0, 0, 0, 1);
     margin: 5px;
 }
 
@@ -470,17 +469,14 @@ main {
     #right-txt-dyk {
         text-align: end;
         align-self: flex-end;
-        /* CHECK IF WORKS -E display: block*/
-        margin-left: 10vw;
-        padding-left: 10vw;
+       
+      
     }
 
     #left-txt-dyk {
         text-align: start;
         align-self: flex-start;
-        /* CHECK IF WORKS -E display:block*/
-        padding-left: 10vw;
-        margin-left: 10vw;
+       
     }
 
     #mid-img-dyk {
