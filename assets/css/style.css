@@ -100,13 +100,13 @@ main {
     /* background-color: #e1c3af; */
     /* MAIN ELEMENT TAKE SURPLUS SPACE TO PUSH FOOTER */
     flex: 1 0 auto;
-    margin-top: 45px;
+    margin-top: 77px;
     background-color: #FCFCF5;
 
 }
 
 #hero {
-    height: 600px;
+    height: 50vh;
     width: 100%;
     background: url("../images/photo-1534294228306-bd54eb9a7ba8\ \(1\).avif") no-repeat center center/cover;
     transition: transform 10s ease-in-out, width 3s ease-in-out, height 3s ease-in-out;
@@ -160,12 +160,14 @@ main {
 
 #didyouknow {
 
-    height: 600px;
+    height: 50vh;
 
 
     position: relative;
     overflow: hidden;
     width: 100%;
+
+    margin-bottom: -10vh;
 
 
 }
@@ -180,14 +182,14 @@ main {
 
 #left-txt-dyk {
     padding-top: 30px;
-    width: 33%;
+    width: 25%;
     float: left;
 
 }
 
 #right-txt-dyk {
     padding-top: 30px;
-    width: 33%;
+    width: 25%;
     float: right;
 
 }
@@ -195,16 +197,17 @@ main {
 
 #mid-img-dyk {
 
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
 
     display: flex;
     align-items: center;
+    justify-content: center;
 
     position: relative;
     overflow: hidden;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 50vw;
+    max-height: 40vh;
 
 
     border-radius: 5%;
@@ -269,13 +272,12 @@ main {
 
 
 .container-glow {
-    width: 50%;
+    width: 100%;
     min-height: 10vh;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 25vw;
     margin-top: 5px;
 }
 
@@ -499,8 +501,7 @@ main {
 }
 
 /* For xlarge screens size from 1200px wide and up*/
-            width: 60rem;
-            height: 60rem;
+          
             
          @media screen and (min-width:1200px) {
     #explore-photos {
@@ -508,5 +509,5 @@ main {
         column-gap: 10px;
 
     }
-
+    
 }
