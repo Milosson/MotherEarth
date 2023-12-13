@@ -100,7 +100,7 @@ main {
     /* background-color: #e1c3af; */
     /* MAIN ELEMENT TAKE SURPLUS SPACE TO PUSH FOOTER */
     flex: 1 0 auto;
-    margin-top: 47px;
+    margin-top: 77px;
     background-color: #FCFCF5;
 
 }
@@ -151,7 +151,7 @@ main {
     right: 40px;
     padding-left: 10px;
     padding-top: 20px;
-    top: 280px;
+    top: 150px;
 
     box-shadow: 1px 5px 5px rgba(92, 156, 230, 0.445);
 }
@@ -166,7 +166,7 @@ main {
 
     position: relative;
     overflow: hidden;
-    
+
 
 
 
@@ -317,18 +317,42 @@ main {
 
 #explore-photos img {
     width: 100%;
+    height: 50%;
     line-height: 1em;
+    margin-left: 0.25em;
+    border: 1px solid #f0ebac;
+   
 
 
 }
 
 #explore-photos {
     line-height: 0;
+    padding-right: 10px;
 
 }
 
 /*SIGNUP FORM STYLE*/
+#signupform {
+    border: 10px solid black;
+    padding: 2rem 1rem;
+    min-height: 3em;
+    resize: both;
+    border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
 
+}
+.input {
+    padding: 0.25rem;
+}
+.inputcontainer {
+    padding: 0.25rem;
+    margin-top: 0.1rem;
+}
+
+#signuptitle {
+    font-size: 5vw;
+    
+}
 
 /* FOOTER */
 
@@ -352,12 +376,24 @@ main {
 /* Media query: XS Device (>280px) */
 @media screen and (min-width: 280px) {
 
-.signupform {
-   
-display: flex;
-justify-content: center;
-margin: 25vw;
-}
+    #signupform {
+
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #signup-bg {
+        background: url('/assets/images/blue-earth.avif') rgba(0, 0, 0, 0.7);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        position: relative;
+    }
 }
 
 /* MEDIA QUERY: tablets and larger (>576px and up) */
@@ -419,12 +455,12 @@ margin: 25vw;
     }
 
     #explore-photos img {
-        /* width: 100%;     
-    line-height: 1em; */
+
+        line-height: 1em;
         width: 450px;
-        height: 300px;
+        height: 50%;
         margin: 10px;
-        border: 10px solid #fefae0;
+        border: 10px solid #73b185;
         -webkit-filter: sepia(100%);
         filter: sepia(100%);
         transition-duration: 1s;
@@ -432,7 +468,7 @@ margin: 25vw;
     }
 
     #explore-photos {
-        /* line-height: 0; */
+        line-height: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -483,14 +519,14 @@ margin: 25vw;
     #right-txt-dyk {
         text-align: end;
         align-self: flex-end;
-       
-      
+
+
     }
 
     #left-txt-dyk {
         text-align: start;
         align-self: flex-start;
-       
+
     }
 
     #mid-img-dyk {
@@ -510,13 +546,13 @@ margin: 25vw;
 }
 
 /* For xlarge screens size from 1200px wide and up*/
-          
-            
-         @media screen and (min-width:1200px) {
+
+
+@media screen and (min-width:1200px) {
     #explore-photos {
         column-count: 3;
         column-gap: 10px;
 
     }
-    
+
 }
