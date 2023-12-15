@@ -25,6 +25,7 @@ This project aims to raise awareness about Earth, its unique features, and the i
   - [Project Status](#project-status)
   - [Contribution Guidelines](#contribution-guidelines)
   - [Media and Acknowledgements](#media-and-acknowledgements)
+  - [**Gratitude and a heartfelt shout-out to my mentor, fellow peers, and invaluable resources at Code Institute. Their tutorials and inspiring contributions have been instrumental in shaping this project.**](#gratitude-and-a-heartfelt-shout-out-to-my-mentor-fellow-peers-and-invaluable-resources-at-code-institute-their-tutorials-and-inspiring-contributions-have-been-instrumental-in-shaping-this-project)
   - [License Information](#license-information)
   - [Conclusion](#conclusion)
 
@@ -119,9 +120,12 @@ Special Thanks and recognition to:
   2. nationalgeographic.com
   3. space.com
 - **Code and styling inspiration**
+  
   1. StackOverflow.com
   2. Super Simple Dev (<https://www.youtube.com/@SuperSimpleDev>) ![Youtube](https://cdn.emojidex.com/emoji/mdpi/YouTube.png)
   3. Web Dev Simplified (<https://www.youtube.com/@WebDevSimplified>) ![Youtube](https://cdn.emojidex.com/emoji/mdpi/YouTube.png)
+
+## **Gratitude and a heartfelt shout-out to my mentor, fellow peers, and invaluable resources at [Code Institute](www.codeinstitute.net). Their tutorials and inspiring contributions have been instrumental in shaping this project.**
 
 ## License Information
 
@@ -129,4 +133,4 @@ Special Thanks and recognition to:
 
 ## Conclusion
 
-Thank you for visiting Planet Eart - Our Home! 🌍✨
+Thank you for visiting Planet Earth - Our Home! 🌍✨
