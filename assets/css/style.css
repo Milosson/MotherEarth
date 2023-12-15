@@ -271,8 +271,8 @@ main {
     100% {
         color: #ffffff;
         filter: blur(1px);
-        text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff 0 30px #ffffff,
-            0 0 40px #ffffff, 0 60px #ffffff 0 0 80px #ffffff, 0 100px #ffffff,
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff,
+            0 0 40px #ffffff, 0 0 60px #ffffff, 0 0 80px #ffffff, 0 0 100px #ffffff,
             0 0 120px #ffffff;
     }
 
@@ -313,15 +313,92 @@ main {
     border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
 }
 
-.input {
-    padding: 0.25rem;
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
+
 
 .inputcontainer {
     padding: 0.25rem;
     margin-top: 0.1rem;
 }
 
+#signuptitle {
+    font-size: 4vw;
+    position: relative;
+    color: #fff8957e;
+}
+
+#signuptitle:before {
+    content: "";
+    z-index: -1;
+    left: 0em;
+    top: 0em;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(77, 189, 103);
+    position: absolute;
+    border-right-color: transparent;
+    width: 100%;
+    height: 1em;
+    transform: rotate(2deg);
+    opacity: 0.5;
+    border-radius: 0.25em;
+
+}
+
+#signuptitle:after {
+    content: "";
+    z-index: -1;
+    left: 0em;
+    top: 0em;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(122, 241, 138);
+    border-left-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 1em;
+    transform: rotate(-1deg);
+    opacity: 0.5;
+    border-radius: 0.25em;
+}
+
+.submitbtn {
+    display: block;
+    margin-left: 0.25em;
+    padding: 15px 30px;
+    border: none;
+    background-color: rgb(0, 128, 40);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 30px;
+}
+
+.submitbtn:hover {
+    background-color: #003b1b;
+}
+
+#contactdiv {
+    display: flex;
+    top: 300px;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
 
 /* FOOTER */
 
@@ -354,70 +431,12 @@ main {
     }
 
     #signup-bg {
-        background: url("../images/blue-earth.avif") rgba(0, 0, 0, 0.8);
+        background: url("../images/blue-earth.avif") rgba(0, 0, 0, 0.7);
         height: 100vh;
         background-size: cover;
         background-position: center;
         overflow: hidden;
         position: relative;
-    }
-
-    #signuptitle {
-        position: relative;
-        color: #fff8957e;
-    }
-
-    #signuptitle:before {
-        content: "";
-        z-index: -1;
-        left: 0em;
-        top: 0em;
-        border-width: 2px;
-        border-style: solid;
-        border-color: rgb(77, 189, 103);
-        position: absolute;
-        border-right-color: transparent;
-        width: 100%;
-        height: 1em;
-        transform: rotate(2deg);
-        opacity: 0.5;
-        border-radius: 0.25em;
-
-    }
-
-    #signuptitle:after {
-        content: "";
-        z-index: -1;
-        left: 0em;
-        top: 0em;
-        border-width: 2px;
-        border-style: solid;
-        border-color: rgb(122, 241, 138);
-        border-left-color: transparent;
-        border-top-color: transparent;
-        position: absolute;
-        width: 100%;
-        height: 1em;
-        transform: rotate(-1deg);
-        opacity: 0.5;
-        border-radius: 0.25em;
-    }
-
-    .submitbtn {
-        display: block;
-        margin-left: 0.25em;
-        padding: 15px 30px;
-        border: none;
-        background-color: rgb(0, 128, 40);
-        color: white;
-        border-radius: 6px;
-        cursor: pointer;
-        font-size: 1em;
-        margin-top: 30px;
-    }
-
-    .submitbtn:hover {
-        background-color: #003b1b;
     }
 }
 
@@ -488,73 +507,112 @@ main {
     }
 }
 
-/* MEDIA QUERY: small laptops and larger (992px and up) */
-@media screen and (min-width: 992px) {
-    #menu a:hover {
-        border-bottom: 1px solid #3a3a3a;
-    }
+/* FOOTER */
+
+#social-links {
+    display: flex;
+    padding: 5px;
+    justify-content: space-evenly;
+    letter-spacing: 5px;
+    list-style-type: none;
+    text-align: center;
+
+    margin: 5px;
 }
 
-/* For larger to medium screens size from 1200px wide and down */
-@media screen and (max-width: 1200px) {
-    #didyouknow {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-    }
+#social-links i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
 
-    #dyk-heading {
-        padding: 30px 0;
-        margin: 0;
-    }
-
-    #left-txt-dyk,
-    #right-txt-dyk {
-        width: 100%;
+/* Media query: XS Device (>280px) */
+@media screen and (min-width: 280px) {
+    #signupform {
+        position: absolute;
         display: flex;
-        flex-direction: column;
-        padding: 0;
-        align-items: center;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
-    #left-txt-dyk>div,
-    #right-txt-dyk>div {
-        width: 75%;
-    }
-
-    #right-txt-dyk {
-        text-align: end;
-        align-self: flex-end;
-    }
-
-    #left-txt-dyk {
-        text-align: start;
-        align-self: flex-start;
-    }
-
-    #mid-img-dyk {
-
-        width: 100%;
-        padding: 0;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        position: relative;
+    #signup-bg {
+        background: url("../images/blue-earth.avif") rgba(0, 0, 0, 0.8);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
         overflow: hidden;
+        position: relative;
     }
 
-    #hero-outer {
-        width: 100%;
-        height: 100%;
+    /* MEDIA QUERY: small laptops and larger (992px and up) */
+    @media screen and (min-width: 992px) {
+        #menu a:hover {
+            border-bottom: 1px solid #3a3a3a;
+        }
     }
-}
 
-/* For xlarge screens size from 1200px wide and up*/
+    /* For larger to medium screens size from 1200px wide and down */
+    @media screen and (max-width: 1200px) {
+        #didyouknow {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
 
-@media screen and (min-width: 1200px) {
-    #explore-photos {
-        column-count: 3;
-        column-gap: 10px;
+        #dyk-heading {
+            padding: 30px 0;
+            margin: 0;
+        }
+
+        #left-txt-dyk,
+        #right-txt-dyk {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            align-items: center;
+        }
+
+        #left-txt-dyk>div,
+        #right-txt-dyk>div {
+            width: 75%;
+        }
+
+        #right-txt-dyk {
+            text-align: end;
+            align-self: flex-end;
+        }
+
+        #left-txt-dyk {
+            text-align: start;
+            align-self: flex-start;
+        }
+
+        #mid-img-dyk {
+
+            width: 100%;
+            padding: 0;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #hero-outer {
+            width: 100%;
+            height: 100%;
+        }
     }
-}
+
+    /* For xlarge screens size from 1200px wide and up*/
+
+    @media screen and (min-width: 1200px) {
+        #explore-photos {
+            column-count: 3;
+            column-gap: 10px;
+        }
+    }

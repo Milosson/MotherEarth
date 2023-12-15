@@ -111,14 +111,14 @@ Special Thanks and recognition to:
 
 - **Images**
 
-1. Unsplash.com
-2. iStockPhoto.com
-3. Pexels.com
+1. [Unsplash](https://www.unsplash.com)
+2. [iStockPhoto](https://www.iStockPhoto.com)
+3. [Pexels](https://www.pexels.com)
 
 - **Text and information**
-  1. nasa.gov
-  2. nationalgeographic.com
-  3. space.com
+  1. [nasa.gov](https://www.nasa.gov)
+  2. [nationalgeographic](https://www.nationalgeographic.com)
+  3. [space](https://www.space.com)
 - **Code and styling inspiration**
   
   1. StackOverflow.com
