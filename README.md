@@ -1,39 +1,90 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Planet Earth - Our Home 🌎
 
-Welcome,
+## Welcome to Planet Earth
+Welcome to the Planet Earth website, a digital space edicated to our beloved home.
+This project aims to raise awareness about Earth, its unique features, and the importance of environmental conservation. The website provides information, interesting facts, and upcoming celestial events related to our planet.
+![Responsive mockup preview](/assets/images/amirerespons.JPG)
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of Contents
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+- [ProjectTitle](#WelcometoPlanetEarth)
+- [TechnologiesUsed](#TechnologiesUsed)
+- [Requirements](#Requirements)
+- [Installation Instructions](#InstallationInstructions)
+- [Usage Instructions](#UsageInstructions)
+- [Documentation](#Documentation)
+- [Support Information](#SupportInformation)
+- [Project Roadmap](#ProjectRoadmap)
+- [Project Status](#ProjectStatus)
+- [Contribution Guidelines](#ContributionGuidelines)
+- [Media And Acknowledgements](#MediaAndAcknowledgements)
+- [License Information](#LicenseInformation)
+- [Conclusion](#Conclusion)
 
-## Codeanywhere Reminders
+## Techonologies Used
+- HTML5
+- CSS3
+- Font Awesome
+- Google Fonts (Montserrat, Roboto Slab)
+  
+## Requirements
+  - Web Browser (Recommended: Chrome, Firefox, Safari)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## Installation Instructions
+1. Clone the repository:
 
-`python3 -m http.server`
+```bash
+git clone https://milosson.github.io/MotherEarth/
+```
+2. Open the project in your preffered code editor.
+3. Launc the website by opening the 'index.html' file in a web browser.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Usage Instructions
+Explore the various sections of the website by clicking on the navigation links.
+Learn more about Earth, its wonders, and upcoming events. The website is designed to intuitive, ensuring a seamless experience for users.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## Documentation
+The documentation for this project is included in this README file.
 
-`http_server`
+## Support Information
+For any issues or inquiries, please contact [ milorazzaz@protonmail.com ]
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Project Roadmap
+- **Phase 1:** Website setup and basic structure.
+- **Phase 2:** Implementation of "Did You Know" and Earth events section.
+- **Phase 3:** Styling and responsiveness improvements.
+- **Phase 4:** Testing and bug fixing.
+- **Phase 5:** Deployment and project completion.
+ 
+## Project Status
+Currently at endpoint of **Phase4** breaching into **Phase5**.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Contribution Guidelines
+If you'd like to contribute to the project, please follow these steps:
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make change and commit them.
+4. Push your changes fo your fork.
+5. Create a pull request.
 
-To log into the Heroku toolbelt CLI:
+## Media and Acknowledgements
+Special Thanks and recognition to:
+- **Images**
+1. Unsplash.com
+2. iStockPhoto.com
+3. Pexels.com
+- **Text and information**
+  1. nasa.gov
+  2. nationalgeographic.com
+  3. space.com
+- **Code and styling inspiration**
+  1. StackOverflow.com
+  2. Super Simple Dev (<https://www.youtube.com/@SuperSimpleDev>) ![Youtube](https://cdn.emojidex.com/emoji/mdpi/YouTube.png)
+  3. Web Dev Simplified (<https://www.youtube.com/@WebDevSimplified>) ![Youtube](https://cdn.emojidex.com/emoji/mdpi/YouTube.png)
+  
+  ## License Information
+This project is lincensed under the MIT License. Feel free to use and modify the code as needed. *As long as you are an earthling!* 👨‍🚀
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+## Conclusion
+Thank you for visiting Planet Eart - Our Home! 🌍✨
