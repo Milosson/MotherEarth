@@ -177,12 +177,12 @@ main {
 }
 
 #mid-img-dyk {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     position: relative;
     overflow: hidden;
@@ -271,8 +271,8 @@ main {
     100% {
         color: #ffffff;
         filter: blur(1px);
-        text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 30px #ffffff,
-            0 0 40px #ffffff, 0 60px #ffffff, 0 0 80px #ffffff, 0 100px #ffffff,
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff 0 30px #ffffff,
+            0 0 40px #ffffff, 0 60px #ffffff 0 0 80px #ffffff, 0 100px #ffffff,
             0 0 120px #ffffff;
     }
 
@@ -405,7 +405,7 @@ main {
 
     .submitbtn {
         display: block;
-        margin-left: auto;
+        margin-left: 0.25em;
         padding: 15px 30px;
         border: none;
         background-color: rgb(0, 128, 40);
@@ -533,10 +533,15 @@ main {
     }
 
     #mid-img-dyk {
-        clear: both;
-        width: 99%;
+
+        width: 100%;
         padding: 0;
         margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        overflow: hidden;
     }
 
     #hero-outer {

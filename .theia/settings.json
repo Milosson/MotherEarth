@@ -1,0 +1,5 @@
+{
+    "[markdown]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    }
+}
